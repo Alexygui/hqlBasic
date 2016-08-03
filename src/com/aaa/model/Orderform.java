@@ -10,6 +10,12 @@ public class Orderform implements java.io.Serializable {
 
 	// Fields
 
+	@Override
+	public String toString() {
+		return "Orderform [id=" + id + ", customer=" + customer + ", tradedate=" + tradedate + ", status=" + status
+				+ ", amount=" + amount + "]";
+	}
+
 	private Integer id;
 	private Integer customer;
 	private Date tradedate;

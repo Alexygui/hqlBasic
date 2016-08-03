@@ -8,6 +8,12 @@ public class Orderitem implements java.io.Serializable {
 
 	// Fields
 
+	@Override
+	public String toString() {
+		return "Orderitem [id=" + id + ", orderid=" + orderid + ", commodity=" + commodity + ", discount=" + discount
+				+ ", actprice=" + actprice + ", amount=" + amount + "]";
+	}
+
 	private Integer id;
 	private Integer orderid;
 	private Integer commodity;

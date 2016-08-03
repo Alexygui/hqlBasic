@@ -8,6 +8,12 @@ public class Commodity implements java.io.Serializable {
 
 	// Fields
 
+	@Override
+	public String toString() {
+		return "Commodity [id=" + id + ", name=" + name + ", price=" + price + ", unit=" + unit + ", category="
+				+ category + ", description=" + description + ", seller=" + seller + "]";
+	}
+
 	private Integer id;
 	private String name;
 	private Double price;

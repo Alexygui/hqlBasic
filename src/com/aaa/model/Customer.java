@@ -10,6 +10,12 @@ public class Customer implements java.io.Serializable {
 
 	// Fields
 
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", tel=" + tel + ", address=" + address + ", email=" + email
+				+ ", sex=" + sex + ", description=" + description + ", age=" + age + ", birthday=" + birthday + "]";
+	}
+
 	private Integer id;
 	private String name;
 	private String tel;
