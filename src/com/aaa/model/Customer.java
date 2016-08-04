@@ -11,6 +11,7 @@ public class Customer implements java.io.Serializable {
 	// Fields
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@Override
 	public String toString() {
 		return "Customer [id=" + id + ", name=" + name + ", tel=" + tel + ", address=" + address + ", email=" + email
@@ -27,6 +28,8 @@ public class Customer implements java.io.Serializable {
 	private Integer age;//年龄
 	private Date birthday;//生日
 =======
+=======
+>>>>>>> parent of a1f1a39... 添加查询测试方法，持久化类中添加toString方法
 	private Integer id;
 	private String name;
 	private String tel;
