@@ -10,6 +10,7 @@ public class Orderitem implements java.io.Serializable {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@Override
 	public String toString() {
 		return "Orderitem [id=" + id + ", orderid=" + orderform + ", commodity=" + commodity + ", discount=" + discount
@@ -23,6 +24,8 @@ public class Orderitem implements java.io.Serializable {
 	private Double actprice;//价格
 	private Double amount;//数量
 =======
+=======
+>>>>>>> parent of a1f1a39... 添加查询测试方法，持久化类中添加toString方法
 =======
 >>>>>>> parent of a1f1a39... 添加查询测试方法，持久化类中添加toString方法
 	private Integer id;

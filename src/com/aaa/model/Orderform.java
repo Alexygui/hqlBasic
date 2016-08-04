@@ -13,6 +13,7 @@ public class Orderform implements java.io.Serializable {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@Override
 	public String toString() {
 		return "Orderform [id=" + id + ", customer=" + customer + ", tradedate=" + tradedate + ", status=" + status
@@ -26,6 +27,8 @@ public class Orderform implements java.io.Serializable {
 	private Double amount;//订单金额
 	private Set<Orderitem> orderitems;//订单明细
 =======
+=======
+>>>>>>> parent of a1f1a39... 添加查询测试方法，持久化类中添加toString方法
 =======
 >>>>>>> parent of a1f1a39... 添加查询测试方法，持久化类中添加toString方法
 	private Integer id;
