@@ -10,16 +10,16 @@ public class Orderitem implements java.io.Serializable {
 
 	@Override
 	public String toString() {
-		return "Orderitem [id=" + id + ", orderid=" + orderid + ", commodity=" + commodity + ", discount=" + discount
+		return "Orderitem [id=" + id + ", orderid=" + orderform + ", commodity=" + commodity + ", discount=" + discount
 				+ ", actprice=" + actprice + ", amount=" + amount + "]";
 	}
 
-	private Integer id;
-	private Integer orderid;
-	private Integer commodity;
-	private Double discount;
-	private Double actprice;
-	private Double amount;
+	private Integer id;//主键，订单明细ID
+	private Orderform orderform;//总订单
+	private Commodity commodity;//商品编号
+	private Double discount;//折扣
+	private Double actprice;//价格
+	private Double amount;//数量
 
 	// Constructors
 
@@ -28,8 +28,8 @@ public class Orderitem implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Orderitem(Integer orderid, Integer commodity, Double discount, Double actprice, Double amount) {
-		this.orderid = orderid;
+	public Orderitem(Orderform orderform, Commodity commodity, Double discount, Double actprice, Double amount) {
+		this.orderform = orderform;
 		this.commodity = commodity;
 		this.discount = discount;
 		this.actprice = actprice;
@@ -46,19 +46,19 @@ public class Orderitem implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public Integer getOrderid() {
-		return this.orderid;
+	public Orderform getOrderform() {
+		return this.orderform;
 	}
 
-	public void setOrderid(Integer orderid) {
-		this.orderid = orderid;
+	public void setOrderid(Orderform orderform) {
+		this.orderform = orderform;
 	}
 
-	public Integer getCommodity() {
+	public Commodity getCommodity() {
 		return this.commodity;
 	}
 
-	public void setCommodity(Integer commodity) {
+	public void setCommodity(Commodity commodity) {
 		this.commodity = commodity;
 	}
 

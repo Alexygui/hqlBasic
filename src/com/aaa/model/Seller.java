@@ -8,13 +8,13 @@ public class Seller implements java.io.Serializable {
 
 	// Fields
 
-	private Integer id;
-	private String name;
-	private String tel;
-	private String address;
-	private String website;
-	private Integer star;
-	private String business;
+	private Integer id;//主键
+	private String name;//名称
+	private String tel;//电话
+	private String address;//地址
+	private String website;//网站
+	private Integer star;//星级
+	private String business;//经营范围
 
 	// Constructors
 

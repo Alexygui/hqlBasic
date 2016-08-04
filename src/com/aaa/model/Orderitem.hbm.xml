@@ -10,12 +10,18 @@
             <column name="Id" />
             <generator class="increment" />
         </id>
-        <property name="orderid" type="java.lang.Integer">
+		<!-- <property name="orderid" type="java.lang.Integer">
             <column name="ORDERID" />
-        </property>
-        <property name="commodity" type="java.lang.Integer">
+        </property> -->
+        <many-to-one name="orderid" class="com.aaa.model.Orderform" fetch="join">
+        		<column name="orderid"></column>
+        </many-to-one>
+        <!-- <property name="commodity" type="java.lang.Integer">
             <column name="COMMODITY" />
-        </property>
+        </property> -->
+        <many-to-one name="commodity" class="com.aaa.model.Commodity">
+        		<column name="commodity"></column>
+        </many-to-one>
         <property name="discount" type="java.lang.Double">
             <column name="DISCOUNT" precision="11" />
         </property>
@@ -25,5 +31,6 @@
         <property name="amount" type="java.lang.Double">
             <column name="AMOUNT" precision="11" />
         </property>
+        
     </class>
 </hibernate-mapping>

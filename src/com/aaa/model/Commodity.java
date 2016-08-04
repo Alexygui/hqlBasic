@@ -14,13 +14,13 @@ public class Commodity implements java.io.Serializable {
 				+ category + ", description=" + description + ", seller=" + seller + "]";
 	}
 
-	private Integer id;
-	private String name;
-	private Double price;
-	private String unit;
-	private String category;
-	private String description;
-	private Integer seller;
+	private Integer id;//主键
+	private String name;//名称
+	private Double price;//价格
+	private String unit;//单位
+	private String category;//类别
+	private String description;//简介
+	private Seller seller;//商家
 
 	// Constructors
 
@@ -29,7 +29,7 @@ public class Commodity implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Commodity(String name, Double price, String unit, String category, String description, Integer seller) {
+	public Commodity(String name, Double price, String unit, String category, String description, Seller seller) {
 		this.name = name;
 		this.price = price;
 		this.unit = unit;
@@ -88,11 +88,11 @@ public class Commodity implements java.io.Serializable {
 		this.description = description;
 	}
 
-	public Integer getSeller() {
+	public Seller getSeller() {
 		return this.seller;
 	}
 
-	public void setSeller(Integer seller) {
+	public void setSeller(Seller seller) {
 		this.seller = seller;
 	}
 

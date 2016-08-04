@@ -16,15 +16,15 @@ public class Customer implements java.io.Serializable {
 				+ ", sex=" + sex + ", description=" + description + ", age=" + age + ", birthday=" + birthday + "]";
 	}
 
-	private Integer id;
-	private String name;
-	private String tel;
-	private String address;
-	private String email;
-	private String sex;
-	private String description;
-	private Integer age;
-	private Date birthday;
+	private Integer id;//主键
+	private String name;//姓名
+	private String tel;//电话
+	private String address;//地址
+	private String email;//电子邮箱
+	private String sex;//性别
+	private String description;//自我介绍
+	private Integer age;//年龄
+	private Date birthday;//生日
 
 	// Constructors
 

@@ -25,8 +25,9 @@
         <property name="description" type="java.lang.String">
             <column name="description" length="1000" />
         </property>
-        <property name="seller" type="java.lang.Integer">
-            <column name="seller" />
-        </property>
+        
+        <many-to-one name="seller" class="com.aaa.model.Seller" fetch="join">
+        		<column name="seller"></column>
+        </many-to-one>
     </class>
 </hibernate-mapping>
