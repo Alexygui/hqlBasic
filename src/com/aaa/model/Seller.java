@@ -90,10 +90,4 @@ public class Seller implements java.io.Serializable {
 		this.business = business;
 	}
 
-	@Override
-	public String toString() {
-		return "Seller [id=" + id + ", name=" + name + ", tel=" + tel + ", address=" + address + ", website=" + website
-				+ ", star=" + star + ", business=" + business + "]";
-	}
-
 }

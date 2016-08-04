@@ -8,6 +8,7 @@ public class Commodity implements java.io.Serializable {
 
 	// Fields
 
+<<<<<<< HEAD
 	@Override
 	public String toString() {
 		return "Commodity [id=" + id + ", name=" + name + ", price=" + price + ", unit=" + unit + ", category="
@@ -21,6 +22,15 @@ public class Commodity implements java.io.Serializable {
 	private String category;//类别
 	private String description;//简介
 	private Seller seller;//商家
+=======
+	private Integer id;
+	private String name;
+	private Double price;
+	private String unit;
+	private String category;
+	private String description;
+	private Integer seller;
+>>>>>>> parent of a1f1a39... 添加查询测试方法，持久化类中添加toString方法
 
 	// Constructors
 
